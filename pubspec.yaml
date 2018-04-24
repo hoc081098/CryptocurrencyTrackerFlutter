@@ -1,0 +1,22 @@
+name: cryptocurrency_tracker
+description: A new Flutter project.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.0
+  flutter_flux: ^4.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  #assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+  fonts:
+       - family: NunitoSans
+         fonts:
+           - asset: assets/NunitoSans-Regular.ttf
