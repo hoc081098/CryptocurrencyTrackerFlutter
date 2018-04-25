@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:cryptocurrency_tracker/data/coin.dart';
 import 'package:cryptocurrency_tracker/data/coin_repository.dart';
 import 'package:flutter_flux/flutter_flux.dart';
@@ -10,12 +8,11 @@ class CoinStore extends Store {
 
   CoinStore() {
     triggerOnAction(actionGetCoins, (_) async {
-      print("triggerOnAction start");
-      Stream<Coin> streamCoins = await _repository.getAllCoins();
+      final streamCoins = await _repository.getAllCoins();
+      final listCoins = await streamCoins.toList();
       _coins
         ..clear()
-        ..addAll(await streamCoins.toList());
-      print("triggerOnAction end");
+        ..addAll(listCoins);
     });
   }
 

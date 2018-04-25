@@ -13,9 +13,9 @@ class CoinRepository {
   CoinRepository._internal();
 
   Future<Stream<Coin>> getAllCoins() async {
-    var url = 'https://api.coinmarketcap.com/v1/ticker/';
-    var client = http.Client();
-    var streamRes = await client.send(http.Request('get', Uri.parse(url)));
+    final url = 'https://api.coinmarketcap.com/v1/ticker/';
+    final client = http.Client();
+    final streamRes = await client.send(http.Request('get', Uri.parse(url)));
     return streamRes.stream
         .transform(utf8.decoder)
         .transform(json.decoder)

@@ -1,7 +1,11 @@
 class Coin {
-  String id, name, symbol;
-  int rank, lastUpdated;
-  double priceUsd, priceBtc, percentChange1h, percentChange24h, percentChange7d;
+  final String id, name, symbol;
+  final int rank, lastUpdated;
+  final double priceUsd,
+      priceBtc,
+      percentChange1h,
+      percentChange24h,
+      percentChange7d;
 
   Coin({
     this.id,
