@@ -1,6 +1,7 @@
-# cryptocurrency_tracker
+# Cryptocurrency Tracker
 
-A new Flutter project.
+Simple cryptocurrency tracker app
+written in **[Dart](https://www.dartlang.org/)**,  using **[Flutter SDK](https://flutter.io/)**
 
 ## Getting Started
 
